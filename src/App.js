@@ -38,7 +38,7 @@ class App extends Component {
     );
   }
 }
-
+// to connect our component to our redux store
 const mapStateToProps = state => ({
   ...state
 });

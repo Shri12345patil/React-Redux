@@ -1,3 +1,4 @@
+//  create function call obj from actions
 export default (state, action) => {
   switch (action.type) {
     case "rotate":

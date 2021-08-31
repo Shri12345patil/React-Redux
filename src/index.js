@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // new imports start
+// makes the Redux store available to any nested components that have been wrapped in the connect function
 import { Provider } from "react-redux";
 
 import configureStore from './store';
@@ -9,7 +10,6 @@ import configureStore from './store';
 import './index.css';
 
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
 // changed the render
 ReactDOM.render(
@@ -19,5 +19,3 @@ ReactDOM.render(
   document.getElementById('root')
 );
 // changed the render
-
-serviceWorker.unregister();
